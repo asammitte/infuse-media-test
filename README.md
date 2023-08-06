@@ -21,9 +21,6 @@ Since one of the requests for test task is to preferably use docker, we asume th
    git clone git@github.com:asammitte/infuse-media-test.git
    ```
 2. Navigate to `api` directory.
-   ```sh
-   cd api
-   ```
 3. Build, create, start and attache to containers for a service.
    ```sh
    docker-compose up -d
@@ -80,9 +77,6 @@ Unfortunately I did not have time to provide generated ApiDoc, so here I'll list
 It's 2:00AM, unfortunately I didn't have time to make docker-compose for UI, hopefully you have preinstalled `npm`
 
 1. Navigate to `ui` directory from root of the repo.
-   ```sh
-   cd ui
-   ```
 2. Install dependencies:
    ```sh
    npm install
