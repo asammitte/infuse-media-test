@@ -1,6 +1,6 @@
 # INFUSEmedia TEST
 
-Simple test app based on Laravel 10.x and Vue 3.3.x
+Simple test app based on **Laravel 10.x** and **Vue 3.3.x**
 
 <!-- GETTING STARTED -->
 ## Getting Started
