@@ -1,6 +1,6 @@
 # INFUSEmedia TEST
 
-Simple creat, read, delete (no update) test app for INFUSEmedia test.
+Simple creat, read, delete (no update) test app for INFUSEmedia.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
