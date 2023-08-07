@@ -34,7 +34,7 @@ Simple creat, read, delete (no update) test app for INFUSEmedia test.
 
 ## About The Project
 
-Project was build on backend with **[Laravel 10.x](https://laravel.com/)** with some imitation of application layering. On frontend **[Vue 3.3.x](https://vuejs.org/)** with using of [Vuetify](https://vuetifyjs.com/en/) as CSS framework.
+Project was build on backend with **[Laravel 10.x](https://laravel.com/)** with some imitation of application layering. On frontend **[Vue 3.3.x](https://vuejs.org/)** with using of **[Vuetify](https://vuetifyjs.com/en/)** as CSS framework.
 |![INFUSEmedia test screenshot](example.png?raw=true "App screenshot")
 |-
 
@@ -132,7 +132,7 @@ So main motivation, that our API can be used by other clients, not only our SPA 
 
 ## Known issues
 
-- Under Docker **API** works slow, but natively it's quite fast.
+- Under Dockerized PHP **API** works MUCH slower (~900ms), but natively same users list endpoint response in **Postman** is ~40ms. To run natively you have to change DB connection settings for Laravel and specify manually same local PORT or match existed with UI in `.env`.
 
 - If fill form and move with tab, **SUBMIT** button is not become active, only after mouse click, looks like [Vuetify](https://vuetifyjs.com/en/) bug or expected behavior.
 
