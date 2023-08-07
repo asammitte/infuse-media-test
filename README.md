@@ -35,6 +35,7 @@ Simple creat, read, delete (no update) test app for INFUSEmedia test.
 ## About The Project
 
 Project was build on backend with **[Laravel 10.x](https://laravel.com/)** with some imitation of application layering. On frontend **[Vue 3.3.x](https://vuejs.org/)** with using of [Vuetify](https://vuetifyjs.com/en/) as CSS framework.
+![INFUSEmedia test screenshot](example.png?raw=true "App screenshot")
 
 <!-- GETTING STARTED -->
 ## Getting Started
