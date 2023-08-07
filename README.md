@@ -108,6 +108,8 @@ Here are all the details needed for accessing our services through local apps, l
 
 You can access to MySQL DB via any of your DB app by providing default credentials.
 
+* Host: **127.0.0.1**
+
 * Port: **3319** (defined in `./api/docker-compose.yml` file under mysql service)
 
 * Username: **sail** (defined in `./api/.env` file `DB_USERNAME`)
