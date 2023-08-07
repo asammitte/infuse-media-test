@@ -133,3 +133,5 @@ So main motivation, that our API can be used by other clients, not only our SPA 
 - Under Docker **API** works slow, but natively it's quite fast.
 
 - If fill form and move with tab, **SUBMIT** button is not become active, only after mouse click, looks like [Vuetify](https://vuetifyjs.com/en/) bug or expected behavior.
+
+- No UNIT Tests, because of time. On Frontend I'm usually using [Jest](https://jestjs.io/) + [Istanbul](https://istanbul.js.org/)
