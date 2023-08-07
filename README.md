@@ -52,9 +52,9 @@ Since one of the requests for test task is to preferably use docker, we asume th
 
 For **Node.js** and **npm**, just did not have time to make UI Dockerized, hope it's not an issue.
 
-## Installation
+### Installation
 
-### API
+#### API
 1. Clone the repo
    ```sh
    git clone git@github.com:asammitte/infuse-media-test.git
@@ -88,7 +88,7 @@ For **Node.js** and **npm**, just did not have time to make UI Dockerized, hope 
    ./vendor/bin/sail up
    ```
 
-### UI
+#### UI
 
 1. Navigate to `ui` directory from root of the repo.
 2. Install dependencies:
@@ -114,7 +114,7 @@ You can access to MySQL DB via any of your DB app by providing default credentia
 
 * Username: **sail** (defined in `./api/.env` file `DB_USERNAME`)
 
-* Username: **password** (defined in `./api/.env` file `DB_PASSWORD`)
+* Password: **password** (defined in `./api/.env` file `DB_PASSWORD`)
 
 **Endpoints**
 
@@ -125,12 +125,22 @@ Unfortunately I did not have time to provide generated ApiDoc, so here I'll list
 - GET http://127.0.0.1:89/api/users - to fetch list of users.
 
 - POST http://127.0.0.1:89/api/users - to create new user.
+  ```ts
+  // Payload
+  {
+   name: string
+   email: string
+   age: number
+   gender: boolean
+   subscribe: boolean
+  }
+  ```
 
 - DELETE http://127.0.0.1:89/api/users/{id} - to delete user by id.
 
 ## Motivation for splitting projects
 
-So main motivation, that our API can be used by other clients, not only our SPA app, so the as result our api project will be much more straitforeward. Plus no need in additional dependencies to get run together API and UI.
+So main motivation, that our API can be used by other clients, not only our SPA app, but also Mobile, Desktop etc, so there is no need to keep Vue with additional dependencies in same repo. Additional dependencies won't affect api responce performance, but without UI in API repo it woul be much more clearer.
 
 ## Known issues
 
